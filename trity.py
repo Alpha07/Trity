@@ -66,6 +66,7 @@ GR = '\033[37m' # gray
 T  = '\033[93m' # tan
 M = '\033[1;35;32m' # magenta
 os.system('clear')
+os.environ['http_proxy']=''
 if str(platform.system()) != "Linux":
 	sys.exit(""+R+"[!] " + color.UNDERLINE + "\033[91m" + "You are not using a Linux Based OS! Linux is a must-have for this script!" + color.END)
 if not os.geteuid() == 0:
@@ -224,10 +225,8 @@ def tritymain():
 	    elif main == "anonymous":
 	        anon()
 	    elif main == "contact":
-	        print(''+T+'' + color.UNDERLINE + 'Skype:'+W+'' + color.BOLD + ' infamouzgaming' + color.END)
 	        print(''+T+'' + color.UNDERLINE + 'Instagram:'+W+'' + color.BOLD + ' @_t0x1c - www.instagram.com/_t0x1c' + color.END)
-	        print(''+T+'' + color.UNDERLINE + 'Email me:'+W+'' + color.BOLD + ' t0x1cigyt@gmail.com' + color.END)
-	        print(''+T+'' + color.UNDERLINE + 'XMPP:'+W+'' + color.BOLD + ' toxic-ig@exploit.im' + color.END)
+	        print(''+T+'' + color.UNDERLINE + 'Email me:'+W+'' + color.BOLD + ' toxicnull@gmail.com' + color.END)
 	    elif main == "ping":
 		while True:
 	            hostname = raw_input(''+T+'' + color.UNDERLINE + 'Host>' + color.END)
@@ -279,7 +278,7 @@ def tritymain():
 	        if ip is None or ip == "":
 	            sys.exit(""+R+"[!] " + color.UNDERLINE + "\033[91m" + "Please enter an IP!" + color.END)
 	        reversed_dns = socket.getfqdn(ip)
-	        geoip = urllib.urlopen('http://api.hackertarget.com/geoip/?q='
+	        geoip = urllib.urlopen('api.hackertarget.com/geoip/?q='
                                + ip).read().rstrip()
 	        print (""+G+"[*] " + color.UNDERLINE + "\033[91m" + "IP Info" + color.END)
 	        print geoip
