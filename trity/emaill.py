@@ -9,7 +9,6 @@ from email.MIMEText import MIMEText
 import sys
 import os
 import optparse
-from appearance.hue import *
 def spoof_email():
 	def send_email_text(email,password,from_address,to_address,message,subject,sender_name):
 		print info("Spoofing Header")

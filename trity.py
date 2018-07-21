@@ -119,15 +119,11 @@ print ""
 time.sleep(0.1)
 print ""+M+"|----- Made by _t0x1c aka toxic -----|" 
 time.sleep(0.1)
-print color.DARKCYAN + "|-----      Version: 3.0.1      -----|"
+print color.DARKCYAN + "|-----      Version: 3.6      -----|"
 time.sleep(0.1)
 print color.WARNING + "|-----   1 tool - 35 choices    -----|"
-time.sleep(0.1) 
-print color.RED + "|-----  www.toxic-ig.github.io  -----|"
 time.sleep(0.1)
 print color.PURPLE + "\n|----- A Warm Welcome to Trity! -----|"
-time.sleep(0.1)
-print color.BLUE + "|----- Awesome Pentesting tool! -----|"
 time.sleep(0.1)
 print color.YELLOW + "|----- Have Fun and Stay Legal! -----|"
 time.sleep(0.1)
